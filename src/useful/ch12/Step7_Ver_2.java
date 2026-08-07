@@ -6,7 +6,7 @@ package useful.ch12;
  * 로직이 실제로 얼마나 걸리는지 출력 하시오.
  */
 
-public class Step7 {
+public class Step7_Ver_2 {
 
     public static void main(String[] args) {
         //start 시간, end 시간
