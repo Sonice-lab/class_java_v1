@@ -61,7 +61,7 @@ public class WordBook {
             }
 
             //자원 닫기
-            //sc.close();
+            sc.close();
         }
     }//end of main
 }//end of class

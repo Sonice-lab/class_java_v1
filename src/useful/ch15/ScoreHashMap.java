@@ -38,7 +38,5 @@ public class ScoreHashMap {
         for (String k : scores.keySet()) {
             System.out.println(k + ":" + scores.get(k) + "점"); //키를 꺼내면 값이 나온다.
         }
-
-
     }//end of main
 }//end of class
