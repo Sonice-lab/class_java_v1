@@ -47,7 +47,5 @@ public class Challenge1 {
             }
         }
         System.out.println("for문: " + result2);
-
-
     }
 }
