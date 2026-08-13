@@ -52,3 +52,4 @@ public class TypingRecord {
         }
     }//end of main
 }
+

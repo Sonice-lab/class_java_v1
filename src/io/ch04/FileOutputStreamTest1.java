@@ -37,9 +37,6 @@ public class FileOutputStreamTest1 {
                     throw new RuntimeException(e);
                 }
             }
-
         }
-
-
     }//end of main
 }

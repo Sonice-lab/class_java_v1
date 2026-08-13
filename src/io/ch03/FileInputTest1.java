@@ -47,9 +47,6 @@ public class FileInputTest1 {
                 throw new RuntimeException(e);
             }
         }
-
         //in.close(); //예상 문제 - catch에서 잡히면 실행되지 않음 -> finally 안에 넣어 예외처리 해주기
-
-
     }//end of main
 }

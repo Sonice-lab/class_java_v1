@@ -36,6 +36,5 @@ public class TimeEstimate1 {
         //3. jave.time을 활용하여 두 작업 간의 시간을 측정하기
 
         //4. 어떤 작업이 더 빠른지 출력하기 > 작업1. 44ms
-
     }
 }
