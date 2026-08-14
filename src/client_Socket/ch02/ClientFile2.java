@@ -11,7 +11,7 @@ public class ClientFile2 {
 
     public static void main(String[] args) {
 
-        try (Socket socket = new Socket("192.168.5.17", 5000)) {
+        try (Socket socket = new Socket("localhost", 5000)) {
             System.out.println("------------서버 연결 완료-------------");
 
             // 쓰기 스트림(클라이언트 ---> 서버)
@@ -20,7 +20,7 @@ public class ClientFile2 {
             BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
             //서버측으로 보낼 메세지
-            writer.println("야호야호 안녕하세용!><");
+            writer.println("안녕하세요! 저는 두부처럼 보이지만 실은, 벽돌이랍니다! 꺄르륵꺄르륵");
 
             //서버측에서 응답 수신
             String reponseMessage = reader.readLine();//서버에서 데이터를 보낼 때까지 블로킹

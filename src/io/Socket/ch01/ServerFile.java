@@ -32,9 +32,6 @@ public class ServerFile {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-
     }//end of main
 }
-
 

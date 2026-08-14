@@ -3,6 +3,9 @@ package io.Socket.ch02;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class ServerFile2 {
     //내 자리 IPv4 주소 . . . . . . . . . : 192.168.5.11 -> 친구찾아가는 것
@@ -28,15 +31,24 @@ public class ServerFile2 {
             //서버가 클라이언트로 응답 메세지 보내기
             writer.println("안녕! 나는 두부야!!!");
 
+
+            //2. 텍스트 파일에 메시지 옆에 일시 출력하기
+            //가. 현재 시간 구하기 및 포맷 지정(원하는 형태로 변경 가능)
+            LocalDateTime now = LocalDateTime.now();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            String formateNow = now.format(formatter);
+
             //서버측에서 클라이언트가 온 메세지를 파일에 저장하는 기능 만들기
-            //1. 파일 생성하는 방법
+            //1. 파일 생성
 
             try (FileWriter fw = new FileWriter("assets/clientMessage.txt", true)) {
-                fw.write(message);
+                fw.write(message + "[" + formatter + "]" + "\n");
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+
     }//end of main
 }
 
