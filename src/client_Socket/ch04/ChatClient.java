@@ -15,7 +15,7 @@ public class ChatClient {
         System.out.print("닉네임을 입력하세요.: ");
         String name = sc.nextLine();
 
-        try (Socket socket = new Socket("192.168.5.101", 5002)) {
+        try (Socket socket = new Socket("192.168.5.11", 5002)) {
             System.out.println(name + "님 채팅방 입장했음(종료: exit)");//클라이언트에 찍히는 것
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));

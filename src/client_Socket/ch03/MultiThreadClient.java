@@ -33,11 +33,12 @@ public class MultiThreadClient {
                             break;
                         }
                         //프로토콜2 - 이모지를 입력하면 문자로 축하메세지 생성
-                        if("🎉".equalsIgnoreCase(serverMessage)){
+                        if ("🎉".equalsIgnoreCase(serverMessage)) {
                             System.out.println("서버측에서 축하메세지를 보내왔습니다.");
                             break;
+                        } else {
+                            System.out.println(serverMessage);
                         }
-                        System.out.println(serverMessage);
                     }
                 } catch (Exception e) {
                     System.err.println("서버가 강제종료되었습니다.");
@@ -54,7 +55,7 @@ public class MultiThreadClient {
                             System.out.println("클라이언트가 종료되었습니다.");
                             break;
                         }
-                        if("🎉".equalsIgnoreCase(clientMessage)){
+                        if ("🎉".equalsIgnoreCase(clientMessage)) {
                             System.out.println("서버측에 축하메세지를 보냈습니다.");
 
                         }
