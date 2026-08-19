@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class FileClient {
 
     // 로컬 환경에서 테스트할 경우 "127.0.0.1" 또는 "localhost"를 사용하세요.
-    private static final String HOST = "127.0.0.1"; // 서버 IP 주소
+    private static final String HOST = "192.168.5.16"; // 서버 IP 주소
     private static final int PORT = 5000;
 
     public static void main(String[] args) {
