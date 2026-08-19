@@ -1,4 +1,4 @@
-package http;
+package http.ch01;
 
 
 import java.io.BufferedReader;
