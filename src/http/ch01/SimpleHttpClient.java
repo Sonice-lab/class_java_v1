@@ -64,8 +64,6 @@ public class SimpleHttpClient {
                 System.out.println("응답 내용: ");
                 System.out.println(response);
             }
-
-
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
@@ -79,7 +77,5 @@ public class SimpleHttpClient {
                 connection.disconnect(); //연결 끊기
             }
         }
-
     }//end of main
-
 }
