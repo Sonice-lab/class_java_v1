@@ -1,0 +1,19 @@
+package http.ch06;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Todo {
+
+    //DTO 클래스로 설계
+    private int userId;
+    private int id;
+    private String title;
+    private boolean completed;
+
+}
