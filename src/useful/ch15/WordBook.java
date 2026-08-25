@@ -15,7 +15,6 @@ public class WordBook {
         words.put("banana", "바나나");
         words.put("cherry", "체리");
 
-
         while (true) {
             System.out.println("\n=== 영한 단어장 ===");
             System.out.println("1.단어 추가 2.단어 검색 3. 전체 출력 4. 종료");
