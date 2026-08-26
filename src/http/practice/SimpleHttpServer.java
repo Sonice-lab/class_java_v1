@@ -76,6 +76,8 @@ public class SimpleHttpServer {
         server.createContext("/api/time", new TimeHandler());
         //접근 경로 예시 5) http://localhost:8080/api/fortune
         server.createContext("/api/fortune", new FortuneApiHandler());
+        //접근 경로 예시 5) http://localhost:8080/api/signup
+        server.createContext("/api/signup", new SignUpHandler());
 
 
         //3. 요청을 처리할 Thread Pool 지정
