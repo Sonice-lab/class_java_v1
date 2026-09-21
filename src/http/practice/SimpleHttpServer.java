@@ -36,7 +36,7 @@ import java.util.concurrent.Executors;
 //
 public class SimpleHttpServer {
     private static final int PORT = 8080;
-    private static final int THREAD_POOL_SIZE = 10;//미리 생성새두는 Thread 갯수를 의미
+    private static final int THREAD_POOL_SIZE = 10;//미리 생성해두는 Thread 갯수를 의미
 
     static final String TYPE_HTML = "text/html; charset=UTF-8";
     static final String TYPE_TEXT = "text/plain; charset=UTF-8";
