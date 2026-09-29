@@ -1,0 +1,23 @@
+package oop_test.ch10;
+
+import oop_test.ch10.Order;
+import oop_test.ch10.OrderDao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+// 다형성
+public class MemoryOrderDao implements OrderDao {
+    private List<Order> orderList = new ArrayList<>();
+
+    @Override
+    public void insert(Order order) {
+        orderList.add(order);
+        System.out.println(order.getMenuName() + " 주문이 접수되었습니다.");
+    }
+
+    @Override
+    public List<Order> findAll() {
+        return orderList;
+    }
+}
